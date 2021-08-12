@@ -1,0 +1,208 @@
+{
+    "work": [
+        {
+            "name": "Netflix",
+            "description": "",
+            "header": "Netflix",
+            "imageSrc": "https://www.freepnglogos.com/uploads/netflix-logo-circle-png-5.png",
+            "order": 1,
+            "projects": [
+                {
+                    "title": "Back to school",
+                    "videoUrl": "https://vimeo.com/518536017"
+                },
+                {
+                    "title": "Parsi New Year",
+                    "videoUrl": "https://vimeo.com/527672037"
+                },
+                {
+                    "title": "Valentines Day",
+                    "videoUrl": "https://vimeo.com/513233984"
+                },
+                {
+                    "title": "Never Have I Ever | Agree To Disagree",
+                    "videoUrl": "https://vimeo.com/575275656"
+                },
+                {
+                    "title": "Agree To Disagree | Season 1",
+                    "videoUrl": "https://vimeo.com/510137779"
+                },
+                {
+                    "title": "Lets talk about sex",
+                    "videoUrl": "https://vimeo.com/396418011"
+                },
+                {
+                    "title": "The Penis and Vagina Quiz",
+                    "videoUrl": "https://vimeo.com/396417969"
+                },
+                {
+                    "title": "5 Reasons Why | Bobby Deol",
+                    "videoUrl": "https://vimeo.com/455173758"
+                },
+                {
+                    "title": "5 Reasons Why | Rohan Shah & Apoorva",
+                    "videoUrl": "https://vimeo.com/493698997"
+                }
+            ]
+        },
+        {
+            "name": "Dabur",
+            "description": "",
+            "header": "Dabur",
+            "imageSrc": "https://www.logo.wine/a/logo/Dabur/Dabur-Logo.wine.svg",
+            "order": 2,
+            "projects": [
+                {
+                    "title": "Dabur Ashwaganda | TVC",
+                    "videoUrl": "https://vimeo.com/474078202"
+                },
+                {
+                    "title": "Dabur Tulsi Drops | TVC",
+                    "videoUrl": "https://vimeo.com/474078237"
+                },
+                {
+                    "title": "Dabur Tulsi Drops | TVC",
+                    "videoUrl": "https://vimeo.com/474078237"
+                },
+                {
+                    "title": "Dabur Juice | TVC",
+                    "videoUrl": "https://vimeo.com/474078252"
+                }
+            ]
+        },
+        {
+            "name": "Diageo",
+            "description": "",
+            "header": "Diageo",
+            "imageSrc": "https://brandslogos.com/wp-content/uploads/images/large/diageo-logo.png",
+            "order": 3,
+            "projects": [
+                {
+                    "title": "Johnnie Walker | Welcome Back",
+                    "videoUrl": "https://vimeo.com/479201971"
+                },
+                {
+                    "title": "Black Dog Easy Evenings | Sumukhi Suresh",
+                    "videoUrl": "https://vimeo.com/396417865"
+                },
+                {
+                    "title": "Black Dog Easy Evenings | Sahil Shah",
+                    "videoUrl": "https://vimeo.com/396416888"
+                },
+                {
+                    "title": "Black Dog Easy Evenings | Cyrus Sahukar",
+                    "videoUrl": "https://vimeo.com/396416820"
+                }
+            ]
+        },
+        {
+            "name": "Amazon Prime Video",
+            "description": "",
+            "header": "Amazon Prime Video",
+            "imageSrc": "https://www.pngfind.com/pngs/m/394-3944103_amazon-prime-video-logo-png-transparent-png.png",
+            "order": 4,
+            "projects": [
+                {
+                    "title": "Dear Daughters | Vidya Balan ",
+                    "videoUrl": "https://vimeo.com/442932615"
+                },
+                {
+                    "title": "Maths Ka Horror | Vidya Balan",
+                    "videoUrl": "https://www.youtube.com/watch?v=-AOgm4XmBGM"
+                },
+                {
+                    "title": "Shakuntala Devi decodes Breathe: Into the shadows",
+                    "videoUrl": "https://www.youtube.com/watch?v=cK1yk2UfH-U"
+                },
+                {
+                    "title": "Black Dog Easy Evenings | Cyrus Sahukar",
+                    "videoUrl": "https://vimeo.com/396416820"
+                }
+            ]
+        },
+        {
+            "name": "Excel Entertainment",
+            "description": "",
+            "header": "Excel Entertainment",
+            "imageSrc": "https://static.wikia.nocookie.net/jhmoviecollection/images/8/8c/Excel_Entertainment_logo.png/revision/latest?cb=20210227030354",
+            "order": 5,
+            "projects": [
+                {
+                    "title": "When KGF takes over ",
+                    "videoUrl": "https://vimeo.com/396418050"
+                }
+            ]
+        },
+        {
+            "name": "What The Duck",
+            "description": "",
+            "header": "What the duck",
+            "imageSrc": "https://yt3.ggpht.com/ytc/AKedOLSTVpPXNn44USTnjjZKBpmv38G-yHcceQwIaPYc=s900-c-k-c0x00ffffff-no-rj",
+            "order": 6,
+            "projects": [
+                {
+                    "title": "Pujara & Mayank Agarwal ",
+                    "videoUrl": "https://vimeo.com/405043883"
+                },
+                {
+                    "title": "Prithvi Shaw & Shreyas Iyer ",
+                    "videoUrl": "https://vimeo.com/405043978"
+                },
+                {
+                    "title": "Dinesh Kartik & Ashwin ",
+                    "videoUrl": "https://vimeo.com/405044073"
+                }
+            ]
+        },
+        {
+            "name": "DBS Bank",
+            "description": "",
+            "header": "DBS Bank",
+            "imageSrc": "https://logos-download.com/wp-content/uploads/2016/12/DBS_Bank_logo_logotype.png",
+            "order": 7,
+            "projects": [
+                {
+                    "title": "DBS Sampurna Earth ",
+                    "videoUrl": "https://vimeo.com/405047045"
+                }
+            ]
+        }
+    ],
+    "main": {
+        "address": {
+            "city": "Mumbai",
+            "state": "Maharashtra",
+            "street": "Vashi, Navi Mumbai",
+            "zip": "400703"
+        },
+        "bio": "Director | Creative Producer | Content Writer",
+        "contactmessage": "",
+        "description": "Iam an independent Director based out in Mumbai. I have directed TVC's,Digital Advertisements etc for brands like Netflix, Amazon, Brut, Dabur,Boat, Diageo etc. I specialize in Narrative based advertisments storyline",
+        "email": "rehanm1994@gmail.com",
+        "image": "",
+        "name": "Raihan Muhimtule",
+        "occupation": "Director,Creative Producer, Content Writer",
+        "phone": "+91 9619477488",
+        "resumedownload": "https://drive.google.com/file/d/1tHHeHs1UQSO5vco-IgPljNt8WbyQVr81/view?usp=sharing",
+        "social": [
+            null,
+            null,
+            {
+                "className": "linkedin",
+                "name": "linkedin",
+                "url": "https://www.linkedin.com/in/raihan-muhimtule-59910889/"
+            },
+            {
+                "className": "instagram",
+                "name": "instagram",
+                "url": "https://www.instagram.com/raihan_muhimtule/"
+            },
+            {
+                "className": "vimeo",
+                "name": "Vimeo",
+                "url": "https://vimeo.com/user97091307"
+            }
+        ],
+        "website": "http://www.aadityashete.me"
+    }
+}
