@@ -57,7 +57,7 @@ const Home = () => {
     let array:JSX.Element[] = [];
     if(otherWork){
       otherWork.forEach(p => {
-        array.push(<Image src={p.imageUrl} w={["md",null,"lg"]} alt={p.title} />)
+        array.push(<Image src={p.imageUrl} w={["md",null,"xl"]} alt={p.title} />)
       })
     }
     setOtherWorkRenderer(array)
