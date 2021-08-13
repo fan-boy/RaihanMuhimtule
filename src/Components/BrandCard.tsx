@@ -18,7 +18,7 @@ const BrandCard = (props:BrandCardProps) =>{
 <Center h="full" w="full"  css={{position:"absolute",top:"0",left:"0",backgroundColor:"gray",opacity:"0" }} _hover={{opacity:"80%"}}>
 <VStack>
 <Text as="b" fontSize = "4xl" >{props.item.header}</Text>
-<Text as="b" fontSize = "3xl">Click for more details.</Text>
+<Text as="b" fontSize = "3xl">Click for video links</Text>
 </VStack>
 </Center>
 </Box>

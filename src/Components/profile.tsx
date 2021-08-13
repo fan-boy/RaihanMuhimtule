@@ -1,10 +1,11 @@
-import { SimpleGrid, VStack,Image,Box,Center,HStack, IconButton ,Icon} from "@chakra-ui/react";
+import { SimpleGrid, VStack,Image,Box,Center,HStack, IconButton ,Icon, Button} from "@chakra-ui/react";
 import React from "react";
 import { useEffect } from "react";
 import { main } from "../DataModels/baseModels";
 import { Flex, Spacer, Text } from "@chakra-ui/layout";
 import {FaFacebookF,FaLinkedinIn,FaInstagram,FaVimeoV} from 'react-icons/fa';
-
+import {FiDownload} from 'react-icons/fi';
+import {HiOutlineMail} from 'react-icons/hi';
 interface ProfileProps{
     profile:main
 }
@@ -56,6 +57,21 @@ const Profile = (props:ProfileProps) =>{
                 icon={<Icon as={FaVimeoV}/>}
                 />
             </HStack>
+            {props.profile.resumedownload && 
+            <a href={props.profile.resumedownload}>
+            <Button leftIcon={<FiDownload />} variant="solid">
+    Download Resume
+            </Button>
+            </a>
+
+}
+{props.profile.email && 
+    <a href={`mailto:${props.profile.email}`}>
+        <Button leftIcon={<HiOutlineMail />} variant="solid">
+    Contact me
+            </Button>
+    </a>
+}
             </VStack>
         </Center>
         <Center h="2xl">
