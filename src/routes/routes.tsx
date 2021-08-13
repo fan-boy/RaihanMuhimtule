@@ -41,7 +41,7 @@ const AppRoutes = () => {
                       Work
                     </Button>
                     <Button m="2" colorScheme="teal" onClick={()=>customHistory.push("/about")} variant="ghost">
-                      Contact
+                      About Me
                     </Button>
                     <ColorModeSwitcher />
                    
@@ -70,7 +70,7 @@ const AppRoutes = () => {
                     <Button m="2" colorScheme="teal" onClick={()=>{customHistory.push("/about")
                     onClose();
                   }} variant="ghost">
-                      Contact
+                      About Me
                     </Button>
                     </VStack>
                     </DrawerBody>
