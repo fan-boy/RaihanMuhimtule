@@ -57,7 +57,7 @@ const Home = () => {
     let array:JSX.Element[] = [];
     if(otherWork){
       otherWork.forEach(p => {
-        array.push(<Image src={p.imageUrl} w="lg" alt={p.title} />)
+        array.push(<Image src={p.imageUrl} w={["md",null,"lg"]} alt={p.title} />)
       })
     }
     setOtherWorkRenderer(array)
@@ -80,7 +80,7 @@ const Home = () => {
   return (
     <Box fontSize="xl" padding="5">
 
-      <SimpleGrid p="4" columns={[1, null, 2]} spacing={5}>
+      <SimpleGrid columns={[1, null, 2]} spacing={[1,null,5]}>
         { renderWork}
         
       </SimpleGrid>
@@ -92,7 +92,7 @@ const Home = () => {
              <Center>
         <Text as="b" fontSize="3xl" justifySelf="flex-center">Also Worked with</Text>
         </Center>
-        <HStack spacing="3">
+        <HStack overflow="scroll" spacing="3">
           {otherWorkRenderer}
         
         </HStack>
