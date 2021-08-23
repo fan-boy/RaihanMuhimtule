@@ -98,7 +98,7 @@ const Home = () => {
     <Button m="2" colorScheme="teal" onClick={()=>aboutRef.current?.scrollIntoView({ behavior: "smooth" })} variant="ghost">
       About Me
     </Button>
-    <ColorModeSwitcher />
+   
    
   </Box>
 </Flex>

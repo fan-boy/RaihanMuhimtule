@@ -35,11 +35,11 @@ const Profile = (props: ProfileProps) => {
     }
 
     return (
-        <Flex p="4" spacing={5} justify='center'>
-            <Center h="2xl" w='50%'>
+        <Flex p="4" justify="center" spacing={5} direction={['column','column','row']}>
+            <Center h="2xl" w={['100%','100%','50%']} >
                 <VStack>
                     <Text as="b" fontSize="3xl" justifySelf="flex-center">{props.profile.name}</Text>
-                    <Text as="b" fontSize="2xl" justifySelf="flex-start">{props.profile.bio}</Text>
+                    <Text as="b" align='center' fontSize="2xl" justifySelf="flex-start">{props.profile.bio}</Text>
 
                     <Spacer />
                     <Spacer />
@@ -72,7 +72,7 @@ const Profile = (props: ProfileProps) => {
 
                     }
                     {(props.profile.email || props.profile.phone )&& 
-                    <Text as='b' fontSize='2xl'>Get in touch</Text>
+                    <Text as='b' fontSize='2xl'>Contact Me</Text>
                     }
                     {props.profile.email &&
                         <a href={`mailto:${props.profile.email}`}>
@@ -88,7 +88,7 @@ const Profile = (props: ProfileProps) => {
                 </VStack>
             </Center>
             {props.profile.image && props.profile.image.length >0 &&
-            <Center h="2xl">
+            <Center h="2xl" w={['100%','100%','50%']}>
                 <Image src={props.profile.image} h={['xl','2xl','2xl']} alt={""} />
             </Center>
             }
