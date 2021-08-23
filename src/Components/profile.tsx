@@ -35,8 +35,8 @@ const Profile = (props: ProfileProps) => {
     }
 
     return (
-        <SimpleGrid p="4" columns={[1, null, 2]} spacing={5}>
-            <Center h="2xl">
+        <Flex p="4" spacing={5} justify='center'>
+            <Center h="2xl" w='50%'>
                 <VStack>
                     <Text as="b" fontSize="3xl" justifySelf="flex-center">{props.profile.name}</Text>
                     <Text as="b" fontSize="2xl" justifySelf="flex-start">{props.profile.bio}</Text>
@@ -72,7 +72,7 @@ const Profile = (props: ProfileProps) => {
 
                     }
                     {(props.profile.email || props.profile.phone )&& 
-                    <Text as='b' fontSize='2xl'>Contact Me</Text>
+                    <Text as='b' fontSize='2xl'>Get in touch</Text>
                     }
                     {props.profile.email &&
                         <a href={`mailto:${props.profile.email}`}>
@@ -87,10 +87,12 @@ const Profile = (props: ProfileProps) => {
                     
                 </VStack>
             </Center>
+            {props.profile.image && props.profile.image.length >0 &&
             <Center h="2xl">
-                <Image src={props.profile.image} h="2xl" alt={""} />
+                <Image src={props.profile.image} h={['xl','2xl','2xl']} alt={""} />
             </Center>
-        </SimpleGrid>
+            }
+        </Flex>
 
     );
 
