@@ -92,7 +92,7 @@ const Home = () => {
     <Text as="b" fontSize="3xl" justifySelf="flex-start">Raihan Muhimtule</Text>
   </Box>
   <Spacer />
-  <Box display={{ base: 'none', md: 'block' }}  py="4" >
+  <Box py="4" >
    
    
     <Button m="2" colorScheme="teal" onClick={()=>aboutRef.current?.scrollIntoView({ behavior: "smooth" })} variant="ghost">
@@ -100,35 +100,6 @@ const Home = () => {
     </Button>
     <ColorModeSwitcher />
    
-  </Box>
-  <Box display={{ base: 'block', md: 'none' }}  p="4">
-  <IconButton icon={<HamburgerIcon/>} ref={btnRef} onClick={onOpen}/>
- 
-<Drawer
-  isOpen={isOpen}
-  placement="right"
-  onClose={onClose}
-  finalFocusRef={btnRef}
->
-  <DrawerOverlay />
-  <DrawerContent>
-    <DrawerCloseButton />
-    
-    <DrawerBody>
-     <VStack spacing={4}
-align="stretch" marginTop="24" >
-    
-    <Button m="2" colorScheme="teal" onClick={()=>{aboutRef.current?.scrollIntoView({ behavior: "smooth" });
-    onClose();
-  }} variant="ghost">
-      About Me
-    </Button>
-    </VStack>
-    </DrawerBody>
-
-    
-  </DrawerContent>
-</Drawer>
   </Box>
 </Flex>
 
