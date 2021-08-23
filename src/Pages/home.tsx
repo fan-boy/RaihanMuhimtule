@@ -36,6 +36,8 @@ const Home = () => {
     }
     history.push(`/work/${id}`,brandState);
   }
+  let aboutRef = createRef<HTMLDivElement>();
+  
 
   useEffect(() => {
     fetch("https://portfolio-161ec-default-rtdb.firebaseio.com/.json").then((response) => {
@@ -52,6 +54,7 @@ const Home = () => {
       }
     })
   },[])
+  
 
   useEffect(()=>{
     let array:JSX.Element[] = [];
@@ -79,6 +82,58 @@ const Home = () => {
 
   return (
     <Box fontSize="xl" padding="5">
+      
+
+
+
+
+<Flex>
+  <Box py="4">
+    <Text as="b" fontSize="3xl" justifySelf="flex-start">Raihan Muhimtule</Text>
+  </Box>
+  <Spacer />
+  <Box display={{ base: 'none', md: 'block' }}  py="4" >
+   
+   
+    <Button m="2" colorScheme="teal" onClick={()=>aboutRef.current?.scrollIntoView({ behavior: "smooth" })} variant="ghost">
+      About Me
+    </Button>
+    <ColorModeSwitcher />
+   
+  </Box>
+  <Box display={{ base: 'block', md: 'none' }}  p="4">
+  <IconButton icon={<HamburgerIcon/>} ref={btnRef} onClick={onOpen}/>
+ 
+<Drawer
+  isOpen={isOpen}
+  placement="right"
+  onClose={onClose}
+  finalFocusRef={btnRef}
+>
+  <DrawerOverlay />
+  <DrawerContent>
+    <DrawerCloseButton />
+    
+    <DrawerBody>
+     <VStack spacing={4}
+align="stretch" marginTop="24" >
+    
+    <Button m="2" colorScheme="teal" onClick={()=>{aboutRef.current?.scrollIntoView({ behavior: "smooth" });
+    onClose();
+  }} variant="ghost">
+      About Me
+    </Button>
+    </VStack>
+    </DrawerBody>
+
+    
+  </DrawerContent>
+</Drawer>
+  </Box>
+</Flex>
+
+
+
 
       <SimpleGrid columns={[1, null, 2]} spacing={[1,null,5]}>
         { renderWork}
@@ -99,7 +154,12 @@ const Home = () => {
         
         </VStack>
       }
-      
+
+      {profile &&
+      <div ref = {aboutRef}>
+        <Profile profile = {profile} />
+      </div>
+        }
     
     </Box>
   );

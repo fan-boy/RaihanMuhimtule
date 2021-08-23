@@ -89,6 +89,17 @@ const WorkDesc = () => {
 
     return (
         <Box fontSize="xl" px="5">
+        <Flex>
+  <Box py="4">
+    <Text as="b" fontSize="3xl" justifySelf="flex-start">Raihan Muhimtule</Text>
+  </Box>
+  <Spacer />
+  
+</Flex>
+
+
+
+
             <Button leftIcon={<BiArrowBack />} onClick = {() => history.push("/")} colorScheme="teal" variant="solid">
     Go Back
             </Button>

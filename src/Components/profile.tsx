@@ -71,11 +71,17 @@ const Profile = (props: ProfileProps) => {
                         </a>
 
                     }
+                    {(props.profile.email || props.profile.phone )&& 
+                    <Text as='b' fontSize='2xl'>Contact Me</Text>
+                    }
                     {props.profile.email &&
                         <a href={`mailto:${props.profile.email}`}>
-                            <Button leftIcon={<HiOutlineMail />} variant="solid">
-                                Contact me
-                            </Button>
+                            <Text> {props.profile.email}</Text>
+                        </a>
+                    }
+                    {props.profile.phone &&
+                        <a href={`tel:${props.profile.phone}`}>
+                            <Text>{props.profile.phone}</Text>
                         </a>
                     }
                     

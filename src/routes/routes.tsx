@@ -18,74 +18,11 @@ const customHistory = createBrowserHistory();
 // Routes For Navigation
 const AppRoutes = () => {
   const { isOpen, onOpen, onClose } = useDisclosure()
-  const btnRef = React.useRef();
   
   
   return (
     <Router history={customHistory}>
-      <Switch>
-        <Route path = "/" render = {props => (
-                <Box fontSize="xl" padding="5">
-
-
-
-
-                <Flex>
-                  <Box py="4">
-                    <Text as="b" fontSize="3xl" justifySelf="flex-start">Raihan Muhimtule</Text>
-                  </Box>
-                  <Spacer />
-                  <Box display={{ base: 'none', md: 'block' }}  py="4" >
-                   
-                    <Button m="2" onClick={()=>customHistory.push("/")} colorScheme="teal" variant="ghost">
-                      Work
-                    </Button>
-                    <Button m="2" colorScheme="teal" onClick={()=>customHistory.push("/about")} variant="ghost">
-                      About Me
-                    </Button>
-                    <ColorModeSwitcher />
-                   
-                  </Box>
-                  <Box display={{ base: 'block', md: 'none' }}  p="4">
-                  <IconButton icon={<HamburgerIcon/>} ref={btnRef} onClick={onOpen}/>
-                 
-                <Drawer
-                  isOpen={isOpen}
-                  placement="right"
-                  onClose={onClose}
-                  finalFocusRef={btnRef}
-                >
-                  <DrawerOverlay />
-                  <DrawerContent>
-                    <DrawerCloseButton />
-                    
-                    <DrawerBody>
-                     <VStack spacing={4}
-                align="stretch" marginTop="24" >
-                    <Button m="2" onClick={()=>{customHistory.push("/");
-                    onClose();
-                  }} colorScheme="teal" variant="ghost">
-                      Work
-                    </Button>
-                    <Button m="2" colorScheme="teal" onClick={()=>{customHistory.push("/about")
-                    onClose();
-                  }} variant="ghost">
-                      About Me
-                    </Button>
-                    </VStack>
-                    </DrawerBody>
-                
-                    
-                  </DrawerContent>
-                </Drawer>
-                  </Box>
-                </Flex>
-                
-                
-                </Box>
-        )}></Route>
-
-      </Switch>
+      
       
         <Switch>
           <Route exact path="/" component={Home}></Route>
